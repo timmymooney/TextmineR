@@ -52,3 +52,4 @@ plot_token_counter <- function(data,
 
   return(plot)
 }
+
