@@ -48,7 +48,7 @@ plot_token_counter <- function(data,
     ggplot2::labs(x = "Token", y = "Frequency") +
     ggplot2::coord_flip() +
     ggplot2::theme_minimal() +
-    ggplot2::theme(text = element_text(colour = "black", size = {{text_size}}))
+    ggplot2::theme(text = element_text(colour = "black", size = {{y_axis_text_size}}))
 
   return(plot)
 }
