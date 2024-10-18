@@ -9,7 +9,7 @@
 #' @export
 #'
 #' @examples
-#' get_column_classes(data = data)
+#' TextmineR::get_column_classes(data = data)
 get_column_classes <- function(data) {
   t(as.data.frame(lapply(data, function(x) paste(class(x), collapse = ','))))
 }
