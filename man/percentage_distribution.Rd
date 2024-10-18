@@ -23,6 +23,6 @@ Counts Percentage Distribution of Group Variable
 Shows the user the percentage distribution of a chosen group variable as well as the raw n counts for each.
 }
 \examples{
-percentage_distribution(data = data,
-                        group_var = group_var)
+TextmineR::percentage_distribution(data = data,
+                                   group_var = group_var)
 }

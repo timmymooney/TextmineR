@@ -11,9 +11,11 @@
 #' @export
 #'
 #' @examples
-#' percentage_distribution(data = data,
-#'                         group_var = group_var)
-percentage_distribution <- function(data, group_var, rows_n = NULL) {
+#' TextmineR::percentage_distribution(data = data,
+#'                                    group_var = group_var)
+percentage_distribution <- function(data,
+                                    group_var,
+                                    rows_n = NULL) {
 
   if (!is.null(rows_n)) {
     percent_count <- data %>%

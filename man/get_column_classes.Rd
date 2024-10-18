@@ -19,5 +19,5 @@ Shows all Column Classes in a Data frame
 A function to quickly check all column/variable classes of a chosen data-frame or tibble
 }
 \examples{
-get_column_classes(data = data)
+TextmineR::get_column_classes(data = data)
 }

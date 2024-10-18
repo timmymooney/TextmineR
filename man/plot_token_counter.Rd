@@ -27,9 +27,9 @@ Plot Token Frequencies of a Text Variable
 A function to render a simple bar chart showing the most frequent words in a text variable. Along with being able to choose how many of the top terms to visualize, the user has the ability to change some aesthetics, such as y axis text size and fill color.
 }
 \examples{
-plot_token_counter(data = data,
-                   text_var = review_comment,
-                   n = 10,
-                   y_axis_text_size = 15,
-                   fill = "gold")
+TextmineR::plot_token_counter(data = data,
+                              text_var = review_comment,
+                              n = 10,
+                              y_axis_text_size = 15,
+                              fill = "gold")
 }
