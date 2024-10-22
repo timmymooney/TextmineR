@@ -17,3 +17,4 @@ process_documents_add_line_breaks <- function(text_variable,
                { paste(words[i:min(i + word_interval - 1,
                                    length(words))], collapse = " ") }), collapse = "<br>")
 }
+
