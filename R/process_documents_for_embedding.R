@@ -1,7 +1,7 @@
 #' Clean Texts Ready for Embedding
 #'
 #' @details
-#' By performing various cleaning steps, the `language_embeddings_pre_processing` function is designed to prepare text data for embedding. It is particularly useful for pre-processing texts before applying them to any natural language processing (NLP) or transformer model such as those hosted on Hugging Face and similar. The key cleaning steps include:
+#' By performing various cleaning steps, the `process_documents_for_embedding` function is designed to prepare text data for embedding. It is particularly useful for pre-processing texts before applying them to any natural language processing (NLP) or transformer model such as those hosted on Hugging Face and similar. The key cleaning steps include:
 #'
 #'-  URLs: Removes most forms of URL link.
 #' - Hashtags: Removes hashtags.
@@ -25,18 +25,18 @@
 #'
 #' @examples
 #' output <- data %>%
-#'  TextmineR::language_embeddings_pre_processing(text_var = texts)
+#'  TextmineR::process_documents_for_embedding(text_var = texts)
 #'
 #' output <- data %>%
-#'  TextmineR::language_embeddings_pre_processing(text_var = texts,
-#'                                                to_lower = TRUE,
-#'                                                remove_punctuation = TRUE,
-#'                                                in_parallel = TRUE)
-language_embeddings_pre_processing <- function(data,
-                                               text_var,
-                                               to_lower = FALSE,
-                                               remove_punctuation = FALSE,
-                                               in_parallel = FALSE) {
+#'  TextmineR::process_documents_for_embedding(text_var = texts,
+#'                                             to_lower = TRUE,
+#'                                             remove_punctuation = TRUE,
+#'                                             in_parallel = TRUE)
+process_documents_for_embedding <- function(data,
+                                            text_var,
+                                            to_lower = FALSE,
+                                            remove_punctuation = FALSE,
+                                            in_parallel = FALSE) {
 
   # sort text variable as symbol
   text_sym <- rlang::ensym(text_var)
