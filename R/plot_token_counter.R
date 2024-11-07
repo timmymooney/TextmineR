@@ -13,11 +13,11 @@
 #' @export
 #'
 #' @examples
-#' TextmineR::plot_token_counter(data = data,
-#'                               text_var = review_comment,
-#'                               n = 10,
-#'                               y_axis_text_size = 15,
-#'                               fill = "gold")
+#' data %>%
+#'  TextmineR::plot_token_counter(text_var = review_comment,
+#'                                n = 10,
+#'                                y_axis_text_size = 15,
+#'                                fill = "gold")
 plot_token_counter <- function(data,
                                text_var,
                                n,

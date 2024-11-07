@@ -14,8 +14,8 @@
 #' theme_colours <- c("theme_1" = "#004d00",
 #'                    "theme_2" = "#009900",
 #'                    "theme_3" = "#ccffcc")
-#' TextmineR::plot_donut_chart(data = data,
-#'                             group_variable = theme,
+#' data %>%
+#'  TextmineR::plot_donut_chart(group_variable = theme,
 #'                             custom_colours = theme_colours)
 plot_donut_chart <- function(data,
                              group_variable,
