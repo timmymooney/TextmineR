@@ -39,7 +39,7 @@ A ggplot2 visual showing the volumes over time of a given dataset
 Plot Data Volumes over Time
 }
 \details{
-A function to render a simple volume over time chart, with the option to change the unit, axis text breaks by unit, colour and trend lend options. The user may also include a dashed vertical line at a given date for if they wish.
+A function to render a simple volume over time chart, with the option to change the unit, axis text breaks by unit, colour and trend line options. The user may also include a dashed vertical line at a given date for if they wish.
 }
 \examples{
 data \%>\%
